@@ -10,10 +10,10 @@ kb count --verbose \
 -c1 /home/ggorin/ref/refdata-gex-GRCh38-2020-A/kallisto/cdna_t2c.txt \
 -c2 /home/ggorin/ref/refdata-gex-GRCh38-2020-A/kallisto/intron_t2c.txt \
 --workflow lamanno --filter bustools --overwrite --loom \
-../counts/norman_crispr/SRR9602535_1.fastq.gz \
-../counts/norman_crispr/SRR9602535_2.fastq.gz \
-../counts/norman_crispr/SRR9602536_1.fastq.gz  \
-../counts/norman_crispr/SRR9602536_2.fastq.gz
+../counts/norman_crispr/fastq/SRR9602535_1.fastq.gz \
+../counts/norman_crispr/fastq/SRR9602535_2.fastq.gz \
+../counts/norman_crispr/fastq/SRR9602536_1.fastq.gz  \
+../counts/norman_crispr/fastq/SRR9602536_2.fastq.gz & \
 
 
 kb count --verbose \
@@ -25,10 +25,10 @@ kb count --verbose \
 -c1 /home/ggorin/ref/refdata-gex-GRCh38-2020-A/kallisto/cdna_t2c.txt \
 -c2 /home/ggorin/ref/refdata-gex-GRCh38-2020-A/kallisto/intron_t2c.txt \
 --workflow lamanno --filter bustools --overwrite --loom \
-../counts/norman_crispr/SRR9602537_1.fastq.gz \
-../counts/norman_crispr/SRR9602537_2.fastq.gz \
-../counts/norman_crispr/SRR9602538_1.fastq.gz  \
-../counts/norman_crispr/SRR9602538_2.fastq.gz
+../counts/norman_crispr/fastq/SRR9602537_1.fastq.gz \
+../counts/norman_crispr/fastq/SRR9602537_2.fastq.gz \
+../counts/norman_crispr/fastq/SRR9602538_1.fastq.gz  \
+../counts/norman_crispr/fastq/SRR9602538_2.fastq.gz & \
 
 
 kb count --verbose \
@@ -40,10 +40,10 @@ kb count --verbose \
 -c1 /home/ggorin/ref/refdata-gex-GRCh38-2020-A/kallisto/cdna_t2c.txt \
 -c2 /home/ggorin/ref/refdata-gex-GRCh38-2020-A/kallisto/intron_t2c.txt \
 --workflow lamanno --filter bustools --overwrite --loom \
-../counts/norman_crispr/SRR9602539_1.fastq.gz \
-../counts/norman_crispr/SRR9602539_2.fastq.gz \
-../counts/norman_crispr/SRR9602540_1.fastq.gz  \
-../counts/norman_crispr/SRR9602540_2.fastq.gz
+../counts/norman_crispr/fastq/SRR9602539_1.fastq.gz \
+../counts/norman_crispr/fastq/SRR9602539_2.fastq.gz \
+../counts/norman_crispr/fastq/SRR9602540_1.fastq.gz  \
+../counts/norman_crispr/fastq/SRR9602540_2.fastq.gz & \
 
 
 kb count --verbose \
@@ -55,7 +55,7 @@ kb count --verbose \
 -c1 /home/ggorin/ref/refdata-gex-GRCh38-2020-A/kallisto/cdna_t2c.txt \
 -c2 /home/ggorin/ref/refdata-gex-GRCh38-2020-A/kallisto/intron_t2c.txt \
 --workflow lamanno --filter bustools --overwrite --loom \
-../counts/norman_crispr/SRR9602541_1.fastq.gz \
-../counts/norman_crispr/SRR9602541_2.fastq.gz \
-../counts/norman_crispr/SRR9602542_1.fastq.gz  \
-../counts/norman_crispr/SRR9602542_2.fastq.gz
+../counts/norman_crispr/fastq/SRR9602541_1.fastq.gz \
+../counts/norman_crispr/fastq/SRR9602541_2.fastq.gz \
+../counts/norman_crispr/fastq/SRR9602542_1.fastq.gz  \
+../counts/norman_crispr/fastq/SRR9602542_2.fastq.gz
