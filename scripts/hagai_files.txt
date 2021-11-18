@@ -1,0 +1,17 @@
+ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-6754/24754_7_S1_L001_R1_001.fastq.gz
+ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-6754/24754_7_S1_L001_R2_001.fastq.gz
+ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-6754/24728_6_S1_L001_R1_001.fastq.gz
+ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-6754/24728_6_S1_L001_R2_001.fastq.gz
+ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-6754/24754_8_S1_L001_R1_001.fastq.gz
+ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-6754/24754_8_S1_L001_R2_001.fastq.gz
+ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-6754/24754_6_S1_L001_R1_001.fastq.gz
+ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-6754/24754_6_S1_L001_R2_001.fastq.gz
+ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-6754/25119_2_S1_L001_R1_001.fastq.gz
+ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-6754/25119_2_S1_L001_R2_001.fastq.gz
+ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-6754/25119_3_S1_L001_R1_001.fastq.gz
+ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-6754/25119_3_S1_L001_R2_001.fastq.gz
+ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-6754/25119_4_S1_L001_R1_001.fastq.gz
+ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-6754/25119_4_S1_L001_R2_001.fastq.gz
+ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-6754/25119_1_S1_L001_R1_001.fastq.gz
+ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-6754/25119_1_S1_L001_R2_001.fastq.gz
+

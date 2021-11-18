@@ -1,0 +1,33 @@
+from glob import glob
+
+dataPath = '/home/tchari/counts/hagai_lps/'
+
+
+results = [f for f in glob(dataPath+'*_S1_L001_R1_001.fastq.gz')]
+results = [f.replace('_S1_L001_R1_001.fastq.gz', '') for f in results]
+
+
+
+
+rule all:
+	input: results
+
+rule kb:
+	input:
+		read1=lambda wildcards: dataPath+f'{wildcards.sample}_S1_L001_R1_001.fastq.gz',
+		read2=lambda wildcards: dataPath+f'{wildcards.sample}_S1_L001_R2_001.fastq.gz'
+	output:
+		directory(dataPath+'{sample}')
+	shell:
+		'kb count --verbose \
+		-i /home/ggorin/ref/refdata-gex-mm10-2020-A/kallisto/index.idx \
+		-g /home/ggorin/ref/refdata-gex-mm10-2020-A/t2g_mm10.txt \
+		-x 10xv2 \
+		-o {output} \
+		-t 30 -m 30G \
+		-c1 /home/ggorin/ref/refdata-gex-mm10-2020-A/kallisto/cdna_t2c.txt \
+		-c2 /home/ggorin/ref/refdata-gex-mm10-2020-A/kallisto/intron_t2c.txt \
+		--workflow lamanno --filter bustools --overwrite --loom \
+		{input.read1} \
+		{input.read2}'
+

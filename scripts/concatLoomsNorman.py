@@ -67,6 +67,8 @@ remain = [[i] for i in remain if i not in pair]
 #All conditions/paired conditions
 assigns = remain + [pair]
 
+#Comment out to not split up controls
+assigns = [['NegCtrl10_NegCtrl0__NegCtrl10_NegCtrl0'],['NegCtrl11_NegCtrl0__NegCtrl11_NegCtrl0'],['NegCtrl1_NegCtrl0__NegCtrl1_NegCtrl0']]
 
 #For each drug condition get cell barcodes/counts and save loom file
 for a in assigns:

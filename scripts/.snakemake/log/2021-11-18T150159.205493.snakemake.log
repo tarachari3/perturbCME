@@ -1,0 +1,84 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 30
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count    min threads    max threads
+-----  -------  -------------  -------------
+all          1              1              1
+kb           8              1              1
+total        9              1              1
+
+Select jobs to execute...
+
+[Thu Nov 18 15:01:59 2021]
+rule kb:
+    input: /home/tchari/counts/hagai_lps/24754_7_S1_L001_R1_001.fastq.gz, /home/tchari/counts/hagai_lps/24754_7_S1_L001_R2_001.fastq.gz
+    output: /home/tchari/counts/hagai_lps/24754_7
+    jobid: 7
+    wildcards: sample=24754_7
+    resources: tmpdir=/tmp
+
+
+[Thu Nov 18 15:01:59 2021]
+rule kb:
+    input: /home/tchari/counts/hagai_lps/25119_3_S1_L001_R1_001.fastq.gz, /home/tchari/counts/hagai_lps/25119_3_S1_L001_R2_001.fastq.gz
+    output: /home/tchari/counts/hagai_lps/25119_3
+    jobid: 8
+    wildcards: sample=25119_3
+    resources: tmpdir=/tmp
+
+
+[Thu Nov 18 15:01:59 2021]
+rule kb:
+    input: /home/tchari/counts/hagai_lps/25119_4_S1_L001_R1_001.fastq.gz, /home/tchari/counts/hagai_lps/25119_4_S1_L001_R2_001.fastq.gz
+    output: /home/tchari/counts/hagai_lps/25119_4
+    jobid: 1
+    wildcards: sample=25119_4
+    resources: tmpdir=/tmp
+
+
+[Thu Nov 18 15:01:59 2021]
+rule kb:
+    input: /home/tchari/counts/hagai_lps/24728_6_S1_L001_R1_001.fastq.gz, /home/tchari/counts/hagai_lps/24728_6_S1_L001_R2_001.fastq.gz
+    output: /home/tchari/counts/hagai_lps/24728_6
+    jobid: 2
+    wildcards: sample=24728_6
+    resources: tmpdir=/tmp
+
+
+[Thu Nov 18 15:01:59 2021]
+rule kb:
+    input: /home/tchari/counts/hagai_lps/24754_6_S1_L001_R1_001.fastq.gz, /home/tchari/counts/hagai_lps/24754_6_S1_L001_R2_001.fastq.gz
+    output: /home/tchari/counts/hagai_lps/24754_6
+    jobid: 3
+    wildcards: sample=24754_6
+    resources: tmpdir=/tmp
+
+
+[Thu Nov 18 15:01:59 2021]
+rule kb:
+    input: /home/tchari/counts/hagai_lps/25119_2_S1_L001_R1_001.fastq.gz, /home/tchari/counts/hagai_lps/25119_2_S1_L001_R2_001.fastq.gz
+    output: /home/tchari/counts/hagai_lps/25119_2
+    jobid: 4
+    wildcards: sample=25119_2
+    resources: tmpdir=/tmp
+
+
+[Thu Nov 18 15:01:59 2021]
+rule kb:
+    input: /home/tchari/counts/hagai_lps/24754_8_S1_L001_R1_001.fastq.gz, /home/tchari/counts/hagai_lps/24754_8_S1_L001_R2_001.fastq.gz
+    output: /home/tchari/counts/hagai_lps/24754_8
+    jobid: 5
+    wildcards: sample=24754_8
+    resources: tmpdir=/tmp
+
+
+[Thu Nov 18 15:01:59 2021]
+rule kb:
+    input: /home/tchari/counts/hagai_lps/25119_1_S1_L001_R1_001.fastq.gz, /home/tchari/counts/hagai_lps/25119_1_S1_L001_R2_001.fastq.gz
+    output: /home/tchari/counts/hagai_lps/25119_1
+    jobid: 6
+    wildcards: sample=25119_1
+    resources: tmpdir=/tmp
+

@@ -82,6 +82,8 @@ remain = [i for i in remain if i not in pairs+opppair]
 assigns = [[str(i)] for i in remain]
 assigns += [[str(x),str(x+12)] for x in pairs]
 
+#Comment out if not splitting up controls
+assigns = [['11'],['23']]
 
 #For each drug condition get cell barcodes/counts and save loom file
 for a in assigns:
