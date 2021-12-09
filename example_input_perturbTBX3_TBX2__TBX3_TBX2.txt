@@ -9,9 +9,9 @@ filter_param : 0.01, 0.01, 500, 500, 1, 1, -1 : first six: min threshold for mea
 all_prev_results : : result files with gene names to exclude
 attribute_names : [['spliced','unspliced','Gene','Barcode']] : list or list of lists with loom attribute names
 gene_sel_seed : 123 : gene selection seed
-n_gen : 2000 : number of genes to select
+n_gen : 5000 : number of genes to select
 IND : 0 : loom_filename to analyze
-gene_list : tc_211129_selected_genes.csv,tc_211129_filtered_genes.csv : set of result files to import to define gene names
+gene_list : tc_211130_selected_genes.csv,tc_211130_filtered_genes.csv : set of result files to import to define gene names
 phys_lb : -2, -1.8, -1.8 : log10 of lower bound on burst size, splice rate, degradation rate
 phys_ub : 4.2, 2.5, 2.5 : upper bound on same
 search_restarts : 1 : how many times to run the search for each gene
