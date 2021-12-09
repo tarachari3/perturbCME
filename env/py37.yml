@@ -23,18 +23,28 @@ dependencies:
   - xz=5.2.5=h7b6447c_0
   - zlib=1.2.11=h7b6447c_3
   - pip:
+    - algopy==0.5.7
     - anndata==0.7.6
+    - appdirs==1.4.4
     - attrs==21.2.0
     - beautifulsoup4==4.10.0
     - bleach==4.1.0
     - cached-property==1.5.2
     - charset-normalizer==2.0.7
     - click==8.0.3
+    - configargparse==1.5.3
+    - connection-pool==0.0.3
     - cycler==0.10.0
+    - datrie==0.8.2
     - defusedxml==0.7.1
+    - dill==0.3.4
+    - docutils==0.18
     - entrypoints==0.3
     - ffq==0.0.4
+    - filelock==3.4.0
     - frozendict==2.0.7
+    - gitdb==4.0.9
+    - gitpython==3.1.24
     - h5py==3.5.0
     - idna==3.3
     - importlib-metadata==4.8.1
@@ -61,15 +71,19 @@ dependencies:
     - networkx==2.6.3
     - ngs-tools==1.5.8
     - numba==0.54.1
+    - numdifftools==0.9.40
     - numexpr==2.7.3
     - numpy==1.20.3
     - numpy-groupies==0.9.14
     - packaging==21.0
     - pandas==1.3.4
     - pandocfilters==1.5.0
+    - parfor==2021.7.1
     - patsy==0.5.2
     - pillow==8.4.0
     - plotly==5.3.1
+    - psutil==5.8.0
+    - pulp==2.5.1
     - pygments==2.10.0
     - pynndescent==0.5.5
     - pyparsing==3.0.1
@@ -77,7 +91,9 @@ dependencies:
     - pysam==0.17.0
     - python-dateutil==2.8.2
     - pytz==2021.3
+    - pyyaml==6.0
     - pyzmq==22.3.0
+    - ratelimiter==1.2.0.post0
     - requests==2.26.0
     - scanpy==1.8.1
     - scikit-learn==1.0.1
@@ -86,13 +102,19 @@ dependencies:
     - shortuuid==1.0.1
     - sinfo==0.3.4
     - six==1.16.0
+    - smart-open==5.2.1
+    - smmap==5.0.0
+    - snakemake==6.10.0
     - soupsieve==2.2.1
     - statsmodels==0.13.0
     - stdlib-list==0.8.0
+    - stopit==1.1.2
     - tables==3.6.1
+    - tabulate==0.8.9
     - tenacity==8.0.1
     - testpath==0.5.0
     - threadpoolctl==3.0.0
+    - toposort==1.7
     - tornado==6.1
     - tqdm==4.62.3
     - traitlets==5.1.1
@@ -100,6 +122,6 @@ dependencies:
     - umap-learn==0.5.1
     - urllib3==1.26.7
     - webencodings==0.5.1
+    - wrapt==1.13.3
     - xlrd==1.2.0
     - zipp==3.6.0
-prefix: /home/tchari/miniconda3/envs/py37
