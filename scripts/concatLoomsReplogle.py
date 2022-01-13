@@ -58,7 +58,7 @@ print(len(uNames))
 #Read in metadata
 
 meta = pd.read_csv(meta_path+'GSM4367984_exp6.cell_identities.csv')
-meta['guide_identity'] = [i+'|'+j for i,j in zip(meta.A, meta.B)] #Make global identity strings/labels
+meta['guide_identity'] = [i+'_'+j for i,j in zip(meta.A, meta.B)] #Make global identity strings/labels
 
 #pair = ['NegCtrl10_NegCtrl0__NegCtrl10_NegCtrl0','NegCtrl11_NegCtrl0__NegCtrl11_NegCtrl0','NegCtrl1_NegCtrl0__NegCtrl1_NegCtrl0']
 pair = []
