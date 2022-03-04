@@ -60,8 +60,10 @@ print(len(uNames))
 meta = pd.read_csv(meta_path+'GSM4367984_exp6.cell_identities.csv')
 meta['guide_identity'] = [i+'_'+j for i,j in zip(meta.A, meta.B)] #Make global identity strings/labels
 
-#pair = ['NegCtrl10_NegCtrl0__NegCtrl10_NegCtrl0','NegCtrl11_NegCtrl0__NegCtrl11_NegCtrl0','NegCtrl1_NegCtrl0__NegCtrl1_NegCtrl0']
-pair = []
+
+pair = ['sgNegCtrl02093a_sgNegCtrl3b','sgNegCtrl4a_sgNegCtrl3b','sgNegCtrl8a_sgNegCtrl3b','sgNegCtrl5a_sgNegCtrl3b',
+'sgNegCtrl1a_sgNegCtrl3b','sgNegCtrl9a_sgNegCtrl3b']
+#pair = []
 
 remain = np.unique(meta.guide_identity)
 remain = [[i] for i in remain if i not in pair]
@@ -69,8 +71,12 @@ remain = [[i] for i in remain if i not in pair]
 #All conditions/paired conditions
 assigns = remain #+ [pair]
 
-#Comment out to not split up controls
-#assigns = [['NegCtrl10_NegCtrl0__NegCtrl10_NegCtrl0'],['NegCtrl11_NegCtrl0__NegCtrl11_NegCtrl0'],['NegCtrl1_NegCtrl0__NegCtrl1_NegCtrl0']]
+#Comment out below to not split up controls
+#assigns = [['sgNegCtrl02093a_sgNegCtrl3b'],['sgNegCtrl4a_sgNegCtrl3b'],['sgNegCtrl8a_sgNegCtrl3b'],['sgNegCtrl5a_sgNegCtrl3b'],
+#['sgNegCtrl1a_sgNegCtrl3b'],['sgNegCtrl9a_sgNegCtrl3b']]
+
+#Comment out to split up controls
+assigns = [pair]
 
 #For each drug condition get cell barcodes/counts and save loom file
 for a in assigns:

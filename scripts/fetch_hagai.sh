@@ -1,4 +1,4 @@
 #!/bin/bash
 #Get all fastqs
 
-wget -i /home/tchari/scripts/hagai_files.txt
+wget -i /home/tchari/perturbCME/scripts/hagai_files.txt
