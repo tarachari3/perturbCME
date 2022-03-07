@@ -27,7 +27,7 @@ sNames = []
 uNames = []
 
 #Read in scanpy metadata
-adata = anndata.read_h5ad(meta_path+'bus_stim.h5ad')
+adata = anndata.read_h5ad(meta_path+'bus_stim.h5ad') #D1.1821
 
 #Filter for SW only
 adata = adata[adata.obs['condition'].isin(['SW'])] #Control cells only
@@ -79,7 +79,7 @@ print(len(uNames))
 
 
 #Get raw counts
-adata_raw =  anndata.read_h5ad(meta_path+'jelly4stim_bus_combo_raw.h5ad')
+adata_raw =  anndata.read_h5ad(meta_path+'jelly4stim_bus_combo_raw.h5ad') #D1.1814
 sc.pp.filter_cells(adata_raw, min_counts=1)
 sc.pp.filter_genes(adata_raw, min_counts=1)
 #Get top hvgs
