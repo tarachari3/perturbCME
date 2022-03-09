@@ -163,6 +163,7 @@ for a in assigns:
 	if subS.shape[0] > 0:
 		#Save loom files in data_path
 		names = '_'.join(a)
+		names = names.replace(' ','_')
 		fname = out_path+'clytia'+names.replace('/','_')+'.loom'
 
 		#row_attrs = { "Gene": geneNames } #genes
