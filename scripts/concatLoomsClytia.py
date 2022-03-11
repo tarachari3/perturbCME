@@ -107,6 +107,26 @@ ufilt = [uNames.index(x) for x in barcodes]
 subS = allS[sfilt,:]
 subU = allU[ufilt,:]
 
+#Save loom prior to gene filtering
+fname = out_path+'clytia_SWall_allGenes.loom'
+
+#row_attrs = { "Gene": geneNames } #genes
+#col_attrs = { "Barcode": np.array(barcodes) } #cells
+
+retAdata = anndata.AnnData(
+	X=subS,
+	layers={
+		'spliced': subS,
+		'unspliced': subU
+	},
+	obs=pd.DataFrame({'Barcode': np.array(barcodes)},index=np.array(barcodes)),
+	var=pd.DataFrame({'Gene': geneNames},index=geneNames)
+)
+
+retAdata.write_loom(fname)
+
+#Filter out HVGs
+
 to_keep = [i not in genes_to_keep for i in geneNames] # Genes not in hvgs
 geneNamesSub = np.array(geneNames)[to_keep]
 
