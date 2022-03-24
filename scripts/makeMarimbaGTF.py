@@ -29,3 +29,9 @@ gtf_sub = gtf[[0,3,4,10]]
 
 gtf_sub.to_csv('Marimba_genes.bed',sep='\t',index=False,header=False)
 
+gtf = pd.read_csv('Marimba_merged_transcript_models_geneAndTrans.gtf',header=None,sep='\t')
+gtf = gtf[gtf[2].isin(['exon'])]
+gtf[9] = [i[15:29] for i in gtf[8]] 
+gtf[10] = gtf[[9,3,4]].apply(lambda row: '|'.join(row.values.astype(str)), axis=1)
+gtf_sub = gtf[[0,3,4,10]]
+gtf_sub.to_csv('Marimba_exons.bed',sep='\t',index=False,header=False)

@@ -27,3 +27,11 @@ gunzip genome.fa.gz
 
 cat clytia_all_genes.fa | cut -f1 -d":" > clytia_all_genes_correct.fa
 
+/home/tchari/bedtools subtract -a Marimba_genes.bed -b Marimba_exons.bed > Marimba_introns.bed
+/home/tchari/bedtools getfasta -fi genome.fa -bed Marimba_introns.bed -name > clytia_all_introns.fa
+
+cat clytia_all_introns.fa | cut -f1 -d":" > clytia_all_introns_correct.fa
+
+
+/home/tchari/bedtools getfasta -fi genome.fa -bed Marimba_exons.bed -name > clytia_all_exons.fa
+cat clytia_all_exons.fa | cut -f1 -d":" > clytia_all_exons_correct.fa

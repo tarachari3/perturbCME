@@ -30,7 +30,7 @@ uNames = []
 adata = anndata.read_h5ad(meta_path+'bus_stim.h5ad') #D1.1821
 
 #Filter for SW only
-adata = adata[adata.obs['condition'].isin(['SW'])] #Control cells only
+adata = adata[adata.obs['condition'].isin(['SW'])] #Control cells only, tested with 'KCl' too (doesn't help)
 
 barcodes = list(adata.obs_names) #SW barcodes
 
@@ -184,7 +184,7 @@ for a in assigns:
 		#Save loom files in data_path
 		names = '_'.join(a)
 		names = names.replace(' ','_')
-		fname = out_path+'clytia'+names.replace('/','_')+'.loom'
+		fname = out_path+'clytia'+names.replace('/','_')+'.loom' #SW_KCl
 
 		#row_attrs = { "Gene": geneNames } #genes
 		#col_attrs = { "Barcode": np.array(barcodes) } #cells
