@@ -23,7 +23,7 @@ concat.to_csv('transcripts.fa.transdecoder.genome_geneAndTrans.gtf',sep='\t',ind
 #Make bed file of genes only
 gtf = pd.read_csv('transcripts.fa.transdecoder.genome_geneAndTrans.gtf',header=None,sep='\t')
 gtf = gtf[gtf[2].isin(['gene'])]
-gtf[9] = [i[9:20] for i in gtf[8]] 
+gtf[9] = [i[9:i.index(';')-1] for i in gtf[8]] 
 gtf[10] = gtf[[9,3,4]].apply(lambda row: '|'.join(row.values.astype(str)), axis=1)
 gtf_sub = gtf[[0,3,4,10]]
 
@@ -31,7 +31,7 @@ gtf_sub.to_csv('transdecoder_genes.bed',sep='\t',index=False,header=False)
 
 gtf = pd.read_csv('transcripts.fa.transdecoder.genome_geneAndTrans.gtf',header=None,sep='\t')
 gtf = gtf[gtf[2].isin(['exon'])]
-gtf[9] = [i[15:29] for i in gtf[8]] 
+gtf[9] = [i[15:i.index(';')-1] for i in gtf[8]] 
 gtf[10] = gtf[[9,3,4]].apply(lambda row: '|'.join(row.values.astype(str)), axis=1)
 gtf_sub = gtf[[0,3,4,10]]
 gtf_sub.to_csv('transdecoder_exons.bed',sep='\t',index=False,header=False)
