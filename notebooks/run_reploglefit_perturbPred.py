@@ -162,17 +162,29 @@ creator = 'tc'
 selGenes = creator+'_'+override+'_selected_genes.csv'
 filtGenes = creator+'_'+override+'_filtered_genes.csv'
 
-#FOR NOW: letting each sample select genes based on criteria
+# #FOR NOW: letting each sample select genes based on criteria
 
-for i in range(0,len(control_looms)):
-	genRunInput(fname=control_looms[i]+'_input.txt',dataDir =data_path+proj_fold+in_fold,
-				outDir=data_path+proj_fold+out_fold,loomName = control_looms[i],
+# for i in range(0,len(control_looms)):
+# 	genRunInput(fname=control_looms[i]+'_input.txt',dataDir =data_path+proj_fold+in_fold,
+# 				outDir=data_path+proj_fold+out_fold,loomName = control_looms[i],
+# 				nCu='20',nlambda='21', restart='5', niter='40', ncor='40',
+# 				attList= "[['spliced','unspliced','Gene','Barcode']]", tranName = transcriptome,override=override) #gList= selGenes+','+filtGenes
+
+# for i in range(0,len(control_looms)):
+# 	inference_workflow(control_looms[i]+'_input.txt')
+
+
+#Perturbation files
+
+
+for i in range(0,len(perturb_looms)):
+	genRunInput(fname=perturb_looms[i]+'_input.txt',dataDir =data_path+proj_fold+in_fold,
+				outDir=data_path+proj_fold+out_fold,loomName = perturb_looms[i], 
 				nCu='20',nlambda='21', restart='5', niter='40', ncor='40',
-				attList= "[['spliced','unspliced','Gene','Barcode']]", tranName = transcriptome,override=override) #gList= selGenes+','+filtGenes
+				attList= "[['spliced','unspliced','Gene','Barcode']]", tranName = transcriptome,override=override) #gList= selGenes+','+filtGenes,
 
-for i in range(0,len(control_looms)):
-	inference_workflow(control_looms[i]+'_input.txt')
-
+for i in range(0,len(perturb_looms)):
+	inference_workflow(perturb_looms[i]+'_input.txt')
 
 
 
