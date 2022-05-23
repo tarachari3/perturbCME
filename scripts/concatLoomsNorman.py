@@ -59,7 +59,7 @@ print(len(uNames))
 
 meta = pd.read_csv(meta_path+'norman_GSE133344_filtered_cell_identities.csv')
 
-pair = ['NegCtrl10_NegCtrl0__NegCtrl10_NegCtrl0','NegCtrl11_NegCtrl0__NegCtrl11_NegCtrl0','NegCtrl1_NegCtrl0__NegCtrl1_NegCtrl0']
+pair = ['NegCtrl10_NegCtrl0__NegCtrl10_NegCtrl0','NegCtrl11_NegCtrl0__NegCtrl11_NegCtrl0','NegCtrl0_NegCtrl0__NegCtrl0_NegCtrl0']
 
 remain = np.unique(meta.guide_identity)
 remain = [[i] for i in remain if i not in pair]
@@ -68,9 +68,9 @@ remain = [[i] for i in remain if i not in pair]
 assigns = remain + [pair]
 
 #Comment out below to not split up controls/samples
-#assigns = [['NegCtrl10_NegCtrl0__NegCtrl10_NegCtrl0'],['NegCtrl11_NegCtrl0__NegCtrl11_NegCtrl0'],['NegCtrl1_NegCtrl0__NegCtrl1_NegCtrl0']]
-assigns = [['NegCtrl0_ETS2__NegCtrl0_ETS2','ETS2_NegCtrl0__ETS2_NegCtrl0'],
-['NegCtrl0_CNN1__NegCtrl0_CNN1','CNN1_NegCtrl0__CNN1_NegCtrl0']]
+assigns = [['NegCtrl10_NegCtrl0__NegCtrl10_NegCtrl0','NegCtrl11_NegCtrl0__NegCtrl11_NegCtrl0','NegCtrl0_NegCtrl0__NegCtrl0_NegCtrl0']]
+#assigns = [['NegCtrl0_ETS2__NegCtrl0_ETS2','ETS2_NegCtrl0__ETS2_NegCtrl0'],
+#['NegCtrl0_CNN1__NegCtrl0_CNN1','CNN1_NegCtrl0__CNN1_NegCtrl0']]
 
 #For each drug condition get cell barcodes/counts and save loom file
 for a in assigns:
