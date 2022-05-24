@@ -10,6 +10,8 @@ kb count --verbose \
 -c1 /home/ggorin/ref/refdata-gex-mm10-2020-A/kallisto/cdna_t2c.txt \
 -c2 /home/ggorin/ref/refdata-gex-mm10-2020-A/kallisto/intron_t2c.txt \
 --workflow lamanno --overwrite --loom \
+/home/tchari/counts/smartseq3_fibro/fastq/Smartseq3.Fibroblasts.NovaSeq.I1.fastq.gz \
+/home/tchari/counts/smartseq3_fibro/fastq/Smartseq3.Fibroblasts.NovaSeq.I2.fastq.gz \
 /home/tchari/counts/smartseq3_fibro/fastq/Smartseq3.Fibroblasts.NovaSeq.R1.fastq.gz  \
 /home/tchari/counts/smartseq3_fibro/fastq/Smartseq3.Fibroblasts.NovaSeq.R2.fastq.gz
 
