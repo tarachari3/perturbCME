@@ -94,12 +94,31 @@ plt.savefig(fig_string,dpi=450)
 
 
 
-dir_string,dataset_strings = monod.preprocess.construct_batch(loom_filepaths, \
-											 transcriptome_filepath, \
-											 dataset_names, \
-											 attribute_names=attribute_names,\
-											 batch_location='./fits',meta='norman_crispr',batch_id=0,\
-											 n_genes=3000,exp_filter_threshold=None,cf=cf)
+#dir_string,dataset_strings = monod.preprocess.construct_batch(loom_filepaths, \
+#											 transcriptome_filepath, \
+#											 dataset_names, \
+#											 attribute_names=attribute_names,\
+#											 batch_location='./fits',meta='norman_crispr',batch_id=0,\
+#											 n_genes=3000,exp_filter_threshold=None,cf=cf)
+
+
+dir_string = './fits/gg_221010_024_norman_crispr_1'
+dataset_strings = ['./fits/gg_221010_024_norman_crispr_1/norman_allcrispr_DUSP9_MAPK1__DUSP9_MAPK1',
+ './fits/gg_221010_024_norman_crispr_1/norman_allcrispr_ETS2_MAPK1__ETS2_MAPK1',
+ './fits/gg_221010_024_norman_crispr_1/norman_allcrispr_MAPK1_NegCtrl0__MAPK1_NegCtrl0_NegCtrl0_MAPK1__NegCtrl0_MAPK1',
+ './fits/gg_221010_024_norman_crispr_1/norman_allcrispr_NegCtrl10_NegCtrl0__NegCtrl10_NegCtrl0',
+ './fits/gg_221010_024_norman_crispr_1/norman_allcrispr_NegCtrl11_NegCtrl0__NegCtrl11_NegCtrl0',
+ './fits/gg_221010_024_norman_crispr_1/norman_allcrispr_NegCtrl1_NegCtrl0__NegCtrl1_NegCtrl0',
+ './fits/gg_221010_024_norman_crispr_1/norman_allcrispr_NegCtrl0_NegCtrl0__NegCtrl0_NegCtrl0',
+ './fits/gg_221010_024_norman_crispr_1/norman_allcrispr_DUSP9_ETS2__DUSP9_ETS2',
+ './fits/gg_221010_024_norman_crispr_1/norman_allcrispr_NegCtrl0_ETS2__NegCtrl0_ETS2_ETS2_NegCtrl0__ETS2_NegCtrl0',
+ './fits/gg_221010_024_norman_crispr_1/norman_allcrispr_DUSP9_NegCtrl0__DUSP9_NegCtrl0',
+ './fits/gg_221010_024_norman_crispr_1/norman_allcrispr_CBL_NegCtrl0__CBL_NegCtrl0',
+ './fits/gg_221010_024_norman_crispr_1/norman_allcrispr_CBL_CNN1__CBL_CNN1',
+ './fits/gg_221010_024_norman_crispr_1/norman_allcrispr_NegCtrl0_CNN1__NegCtrl0_CNN1_CNN1_NegCtrl0__CNN1_NegCtrl0',
+ './fits/gg_221010_024_norman_crispr_1/norman_allcrispr_NegCtrl10_NegCtrl0__NegCtrl10_NegCtrl0_NegCtrl11_NegCtrl0__NegCtrl11_NegCtrl0_NegCtrl0_NegCtrl0__NegCtrl0_NegCtrl0']
+
+
 
 #Define bounds
 phys_lb = [-2.0, -1.8, -1.8 ] #-1.0, -1.8, -1.8
