@@ -12,6 +12,11 @@ import scipy
 import seaborn as sns
 import scipy.stats
 
+import logging, sys
+logging.basicConfig(stream=sys.stdout)
+log = logging.getLogger()
+log.setLevel(logging.INFO)
+
 meta_path = "/home/tchari/metadata/"
 meta = pd.read_csv(meta_path+'replogle_GSM4367984_concat_identities.csv')
 
@@ -64,6 +69,7 @@ for k in range(len(dataset_meta)):
 	with lp.connect(filename,mode='r') as ds:
 		S = ds.layers[spliced_layer][:]
 		U = ds.layers[unspliced_layer][:]
+		print('Loom loaded')
 		gene_names = ds.ra[gene_attr]
 		bcs = ds.ca[cell_attr]
 		n_cells = S.shape[1]
@@ -84,7 +90,9 @@ for k in range(len(dataset_meta)):
 
 
 	ax1[k].set_title(dataset_name)
-	
+
+print("Cells per subcluster: ", [x.sum() for x in cf])
+print()
 
 fig_dir = './figs/'
 fig_string = fig_dir + 'kneeplots_all_replogle.png'
@@ -92,18 +100,16 @@ fig1.tight_layout()
 plt.savefig(fig_string,dpi=450)
 
 
-print("Cells per subcluster: ", [x.sum() for x in cf])
-print()
 
 
-import logging, sys
-logging.basicConfig(stream=sys.stdout)
-log = logging.getLogger()
-log.setLevel(logging.INFO)
+dir_string,dataset_strings = monod.preprocess.construct_batch(loom_filepaths, \
+											 transcriptome_filepath, \
+											 dataset_names, \
+											 attribute_names=attribute_names,\
+											 batch_location='./fits',meta='replogle_crispr',viz=False,batch_id=1,\
+											 n_genes=3000,exp_filter_threshold=None,cf=cf)
 
-
-dir_string,dataset_strings = monod.preprocess.construct_batch(loom_filepaths, transcriptome_filepath,  dataset_names, attribute_names=attribute_names, batch_location='./fits',meta='replogle_crispr', batch_id=1, n_genes=3000,exp_filter_threshold=None,cf=cf)
-
+print('DIR STRING')
 print(dir_string)
 print('DATASET STRINGS')
 print()
