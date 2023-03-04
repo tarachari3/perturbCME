@@ -23,6 +23,9 @@ meta.to_csv(meta_path+'germCell_meta.csv',index=None)
 print(meta.head())
 
 geneNames = testS.columns.values.tolist() #Check
+gene_meta = pd.read_csv(meta_path+'t2g_mouse.txt',delimiter='\t',header=None)
+gene_dict = dict(zip(gene_meta[1], gene_meta[2]))
+geneNames = [gene_dict[i] if i in list(gene_dict.keys()) else i for i in geneNames]
 
 S = testS.to_numpy()
 U = testU.to_numpy()
