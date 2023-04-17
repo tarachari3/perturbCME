@@ -1,0 +1,16 @@
+https://data.caltech.edu/records/9rqdh-bdh28/files/FT-SA16888_S1_L004_R1_001.fastq.gz?download=1
+https://data.caltech.edu/records/kqxac-ydk06/files/FT-SA16888_S1_L004_R2_001.fastq.gz?download=1
+https://data.caltech.edu/records/r02j6-kwp17/files/FT-SA16889_S2_L004_R1_001.fastq.gz?download=1
+https://data.caltech.edu/records/bf6dd-jgr97/files/FT-SA16889_S2_L004_R2_001.fastq.gz?download=1
+https://data.caltech.edu/records/p8td9-8t043/files/FT-SA16890_S3_L004_R1_001.fastq.gz?download=1
+https://data.caltech.edu/records/6k7qw-gye55/files/FT-SA16890_S3_L004_R2_001.fastq.gz?download=1
+https://data.caltech.edu/records/7g17g-dea83/files/FT-SA16891_S4_L004_R1_001.fastq.gz?download=1
+https://data.caltech.edu/records/vhtc7-b8n18/files/FT-SA16891_S4_L004_R2_001.fastq.gz?download=1
+https://data.caltech.edu/records/07k8e-52681/files/FT-SA16892_S5_L004_R1_001.fastq.gz?download=1
+https://data.caltech.edu/records/xysr2-jej96/files/FT-SA16892_S5_L004_R2_001.fastq.gz?download=1
+https://data.caltech.edu/records/fkzp0-paj35/files/FT-SA16893_S6_L004_R1_001.fastq.gz?download=1
+https://data.caltech.edu/records/g3fey-fht72/files/FT-SA16893_S6_L004_R2_001.fastq.gz?download=1
+https://data.caltech.edu/records/kf0pd-3ka19/files/FT-SA16894_S7_L004_R1_001.fastq.gz?download=1
+https://data.caltech.edu/records/3wyxz-29f46/files/FT-SA16894_S7_L004_R2_001.fastq.gz?download=1
+https://data.caltech.edu/records/ytamx-qc140/files/FT-SA16895_S8_L004_R1_001.fastq.gz?download=1
+https://data.caltech.edu/records/12yj2-vcw10/files/FT-SA16895_S8_L004_R2_001.fastq.gz?download=1
